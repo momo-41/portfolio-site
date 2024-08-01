@@ -12,8 +12,8 @@ const Header = () => {
               key={content}
               sx={{
                 color: "#373737",
-                mx: 2,
-                fontSize: 15,
+                mx: { md: 2 },
+                fontSize: { xs: 11, md: 15 },
                 fontFamily: "unset",
                 fontWeight: 550,
                 letterSpacing: 1,

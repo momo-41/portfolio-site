@@ -4,7 +4,7 @@ import React from "react";
 const page = () => {
   return (
     <Box
-      pt={8}
+      pt={{ xs: 7, md: 8 }}
       height={"92vh"}
       sx={{
         backgroundImage: `url("white-background-image-large.jpg")`,
