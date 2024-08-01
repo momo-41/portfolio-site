@@ -1,19 +1,19 @@
 import { Box } from "@mui/material";
 import React from "react";
+import FirstView from "./components/first-view";
 
 const page = () => {
   return (
     <Box
-      pt={{ xs: 7, md: 8 }}
-      height={"92vh"}
+      height={{ xs: "85vh", md: "100vh" }}
       sx={{
         backgroundImage: `url("white-background-image-large.jpg")`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        // backgroundAttachment: "fixed", //first-viewを作ったら入れてみる
+        // backgroundAttachment: "fixed", //second-viewを作ったら入れてみる
       }}
     >
-      aaa
+      <FirstView />
     </Box>
   );
 };
