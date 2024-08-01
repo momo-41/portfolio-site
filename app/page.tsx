@@ -10,7 +10,7 @@ const page = () => {
         backgroundImage: `url("white-background-image-large.jpg")`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        // backgroundAttachment: "fixed", //二次リリース
+        // backgroundAttachment: "fixed", //first-viewを作ったら入れてみる
       }}
     >
       aaa
