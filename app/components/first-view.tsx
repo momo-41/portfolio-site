@@ -11,7 +11,7 @@ const FirstView = () => {
       flexDirection={{ xs: "column", md: "row" }} //PCでは横並び,SPでは縦並び
       pt={{ xs: 7, md: 8 }} //headerに重ならないための余白
       height={{ xs: "78vh", md: "92vh" }} //ここはこれでいいのかConponentでまとめるか
-      mx={{ md: 12 }}
+      px={{ md: 12 }}
     >
       <Box
         height={{ md: "100%" }}
