@@ -11,7 +11,7 @@ const FirstView = () => {
       flexDirection={{ xs: "column", md: "row" }} //PCでは横並び,SPでは縦並び
       pt={{ xs: 7, md: 8 }} //headerに重ならないための余白
       height={{ xs: "78vh", md: "92vh" }} //ここはこれでいいのかConponentでまとめるか
-      mx={{ md: 11 }}
+      mx={{ md: 12 }}
     >
       <Box
         height={{ md: "100%" }}
@@ -25,7 +25,7 @@ const FirstView = () => {
           display={"flex"}
           alignItems={{ xs: "center", md: "flex-start" }}
           flexDirection={"column"}
-          mb={{ xs: 12, md: 6 }}
+          mb={{ xs: 12, md: 5 }}
         >
           <Typography
             fontSize={{ xs: 28, md: 50 }}
@@ -45,6 +45,7 @@ const FirstView = () => {
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
+        mr={{ md: 3 }}
       >
         <MyPCImage
           width={490}
