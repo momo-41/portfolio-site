@@ -1,7 +1,4 @@
-export type AboutMeTitle = {
+export type AboutMeType = {
   title: string[];
-};
-
-export type AboutMeContents = {
   contents: string[];
 };
