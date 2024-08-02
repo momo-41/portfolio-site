@@ -1,7 +1,7 @@
 "use client";
 import { Box, Typography, styled } from "@mui/material";
 import Image from "next/image";
-import { aboutMeContentsData, aboutMeTitleData } from "../const/about-me-data";
+import { aboutMeData } from "../const/about-me-data";
 
 const AboutMe = () => {
   return (
@@ -55,7 +55,7 @@ const AboutMe = () => {
             mt={{ xs: 10 }}
           >
             <Box>
-              {aboutMeTitleData.title.map((data) => (
+              {aboutMeData.title.map((data) => (
                 <Typography
                   key={data}
                   pr={{ xs: 3, md: 8 }}
@@ -69,7 +69,7 @@ const AboutMe = () => {
               ))}
             </Box>
             <Box>
-              {aboutMeContentsData.contents.map((data) => (
+              {aboutMeData.contents.map((data) => (
                 <Typography
                   key={data}
                   py={{ xs: 0.5, md: 0.8 }}
