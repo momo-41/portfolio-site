@@ -13,7 +13,6 @@ const FirstView = () => {
       px={{ md: 12 }}
     >
       <Box
-        height={{ md: "100%" }}
         width={{ xs: "100%", md: "50%" }}
         display={"flex"}
         alignItems={"center"}
@@ -39,7 +38,6 @@ const FirstView = () => {
         </Box>
       </Box>
       <Box
-        height={{ md: "100%" }}
         width={{ md: "50%" }}
         display={"flex"}
         alignItems={"center"}
