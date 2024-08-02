@@ -10,9 +10,9 @@ const AboutMe = () => {
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
-        pt={{ md: 21 }}
+        pt={{ xs: 14, md: 21 }}
       >
-        <Typography fontSize={47} letterSpacing={2}>
+        <Typography fontSize={{ xs: 26, md: 47 }} letterSpacing={2}>
           About me
         </Typography>
       </Box>
@@ -21,7 +21,7 @@ const AboutMe = () => {
         alignItems={"center"}
         justifyContent={"center"}
         flexDirection={{ xs: "column", md: "row" }} //PCでは横並び,SPでは縦並び
-        mt={{ md: 13 }}
+        mt={{ md: 6 }}
       >
         <Box
           height={{ md: "100%" }}
@@ -29,6 +29,7 @@ const AboutMe = () => {
           display={"flex"}
           alignItems={"center"}
           justifyContent={"center"}
+          mt={{ xs: 7 }}
         >
           <MyVsignImage
             width={290}
@@ -50,16 +51,18 @@ const AboutMe = () => {
             display={"flex"}
             alignItems={{ xs: "center", md: "flex-start" }}
             justifyContent={"center"}
-            mr={5}
+            mr={{ md: 5 }}
+            mt={{ xs: 10 }}
           >
             <Box>
               {aboutMeTitleData.title.map((data) => (
                 <Typography
                   key={data}
-                  pr={8}
-                  py={0.8}
-                  fontSize={18}
-                  letterSpacing={0.5}
+                  pr={{ xs: 3, md: 8 }}
+                  py={{ xs: 0.5, md: 0.8 }}
+                  fontSize={{ xs: 12, md: 18 }}
+                  letterSpacing={{ xs: 0.2, md: 0.5 }}
+                  ml={{ xs: 1 }}
                 >
                   {data}
                 </Typography>
@@ -69,9 +72,9 @@ const AboutMe = () => {
               {aboutMeContentsData.contents.map((data) => (
                 <Typography
                   key={data}
-                  py={0.8}
-                  fontSize={18}
-                  letterSpacing={0.5}
+                  py={{ xs: 0.5, md: 0.8 }}
+                  fontSize={{ xs: 12, md: 18 }}
+                  letterSpacing={{ xs: 0.2, md: 0.5 }}
                 >
                   {data}
                 </Typography>
@@ -88,8 +91,8 @@ const MyVsignImage = styled(Image)(({ theme }) => ({
   objectFit: "cover",
   borderRadius: 500,
   [theme.breakpoints.down("md")]: {
-    width: 225,
-    height: 225,
+    width: 130,
+    height: 130,
   },
 }));
 
