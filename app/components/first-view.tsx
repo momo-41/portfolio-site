@@ -10,7 +10,7 @@ const FirstView = () => {
       justifyContent={"center"}
       flexDirection={{ xs: "column", md: "row" }} //PCでは横並び,SPでは縦並び
       height={{ xs: "85vh", md: "100vh" }} //ここはこれでいいのかConponentでまとめるか
-      px={{ md: 12 }}
+      px={{ md: 15 }}
     >
       <Box
         width={{ xs: "100%", md: "50%" }}
@@ -42,7 +42,6 @@ const FirstView = () => {
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
-        mr={{ md: 3 }}
       >
         <MyPCImage
           width={490}
