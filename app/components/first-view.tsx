@@ -9,12 +9,10 @@ const FirstView = () => {
       alignItems={"center"}
       justifyContent={"center"}
       flexDirection={{ xs: "column", md: "row" }} //PCでは横並び,SPでは縦並び
-      pt={{ xs: 7, md: 8 }} //headerに重ならないための余白
-      height={{ xs: "78vh", md: "92vh" }} //ここはこれでいいのかConponentでまとめるか
-      mx={{ md: 12 }}
+      height={{ xs: "85vh", md: "100vh" }} //ここはこれでいいのかConponentでまとめるか
+      px={{ md: 15 }}
     >
       <Box
-        height={{ md: "100%" }}
         width={{ xs: "100%", md: "50%" }}
         display={"flex"}
         alignItems={"center"}
@@ -25,7 +23,7 @@ const FirstView = () => {
           display={"flex"}
           alignItems={{ xs: "center", md: "flex-start" }}
           flexDirection={"column"}
-          mb={{ xs: 12, md: 5 }}
+          mb={{ xs: 10, md: 4 }}
         >
           <Typography
             fontSize={{ xs: 28, md: 50 }}
@@ -40,12 +38,10 @@ const FirstView = () => {
         </Box>
       </Box>
       <Box
-        height={{ md: "100%" }}
         width={{ md: "50%" }}
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
-        mr={{ md: 3 }}
       >
         <MyPCImage
           width={490}
