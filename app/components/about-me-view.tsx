@@ -3,7 +3,7 @@ import { Box, Typography, styled } from "@mui/material";
 import Image from "next/image";
 import { aboutMeData } from "../const/about-me-data";
 
-const AboutMe = () => {
+const AboutMeView = () => {
   return (
     <Box height={{ xs: "85vh", md: "100vh" }} px={{ md: 15 }}>
       <Box
@@ -96,4 +96,4 @@ const MyVsignImage = styled(Image)(({ theme }) => ({
   },
 }));
 
-export default AboutMe;
+export default AboutMeView;
