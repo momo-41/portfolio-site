@@ -9,8 +9,7 @@ const FirstView = () => {
       alignItems={"center"}
       justifyContent={"center"}
       flexDirection={{ xs: "column", md: "row" }} //PCでは横並び,SPでは縦並び
-      pt={{ xs: 7, md: 8 }} //headerに重ならないための余白
-      height={{ xs: "78vh", md: "92vh" }} //ここはこれでいいのかConponentでまとめるか
+      height={{ xs: "85vh", md: "100vh" }} //ここはこれでいいのかConponentでまとめるか
       px={{ md: 12 }}
     >
       <Box
@@ -25,7 +24,7 @@ const FirstView = () => {
           display={"flex"}
           alignItems={{ xs: "center", md: "flex-start" }}
           flexDirection={"column"}
-          mb={{ xs: 12, md: 5 }}
+          mb={{ xs: 10, md: 4 }}
         >
           <Typography
             fontSize={{ xs: 28, md: 50 }}
