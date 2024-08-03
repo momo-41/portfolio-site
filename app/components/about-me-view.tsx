@@ -5,7 +5,7 @@ import { aboutMeData } from "../const/about-me-data";
 
 const AboutMeView = () => {
   return (
-    <Box height={{ xs: "85vh", md: "100vh" }} px={{ md: 15 }}>
+    <Box height={{ xs: "85vh", md: "100vh" }} px={{ md: 15 }} bgcolor={"white"}>
       <Box
         display={"flex"}
         alignItems={"center"}
