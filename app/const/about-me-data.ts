@@ -1,4 +1,4 @@
-import { AboutMeType } from "../types/about-me";
+import { AboutMeType } from "../types/types";
 
 export const aboutMeData: AboutMeType = {
   title: ["名前", "大学名", "学部名", "卒業年度", "経験", "趣味", "特技"],

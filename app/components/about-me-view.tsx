@@ -5,12 +5,16 @@ import { aboutMeData } from "../const/about-me-data";
 
 const AboutMeView = () => {
   return (
-    <Box height={{ xs: "85vh", md: "100vh" }} px={{ md: 15 }}>
+    <Box
+      height={{ xs: "85vh", md: "100vh" }}
+      px={{ md: 15 }}
+      bgcolor={"#FFFFFF"}
+    >
       <Box
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
-        pt={{ xs: 14, md: 21 }}
+        pt={{ xs: 14, md: 20 }}
       >
         <Typography fontSize={{ xs: 26, md: 47 }} letterSpacing={2}>
           About me

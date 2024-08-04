@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import FirstView from "./components/first-view";
 import AboutMeView from "./components/about-me-view";
+import SkillsView from "./components/skills-view";
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
     >
       <FirstView />
       <AboutMeView />
+      <SkillsView />
     </Box>
   );
 };
