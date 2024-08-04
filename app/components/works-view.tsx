@@ -7,7 +7,7 @@ const WorksView = () => {
     <Box
       height={{ md: "100vh" }}
       px={{ xs: 6, md: 25 }}
-      pb={{ xs: 6, md: 0 }}
+      pb={{ xs: 6, md: 0 }} //md:0を指定しないとxs:6がPC画面でも効いてしまう
       bgcolor={"#FFFFFF"}
     >
       <Box
