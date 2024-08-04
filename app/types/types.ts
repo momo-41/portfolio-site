@@ -11,4 +11,5 @@ export type SkillsCardDataType = {
 export type WorksContentsDataType = {
   worksImage: string;
   worksName: string;
+  worksDetail: string;
 };
