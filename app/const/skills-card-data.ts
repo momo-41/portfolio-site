@@ -1,6 +1,6 @@
-import { SkillsCardDataProps } from "../types/types";
+import { SkillsCardDataType } from "../types/types";
 
-export const skillsCardData: SkillsCardDataProps[] = [
+export const skillsCardData: SkillsCardDataType[] = [
   { skillsImage: "/skills-icon/html-icon.svg", skillsName: "HTML" },
   { skillsImage: "/skills-icon/css-icon.svg", skillsName: "CSS" },
   { skillsImage: "/skills-icon/javascript-icon.svg", skillsName: "JavaScript" },
