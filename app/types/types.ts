@@ -3,7 +3,13 @@ export type AboutMeType = {
   contents: string[];
 };
 
-export type SkillsCardDataProps = {
+export type SkillsCardDataType = {
   skillsImage: string;
   skillsName: string;
+};
+
+export type WorksContentsDataType = {
+  worksImage: string;
+  worksName: string;
+  worksDetail: string;
 };

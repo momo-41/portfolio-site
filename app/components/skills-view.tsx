@@ -14,8 +14,8 @@ const SkillsView = () => {
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
-        pt={{ xs: 7, md: 18 }}
-        pb={{ xs: 5, md: 8 }}
+        pt={{ xs: 10, md: 18 }}
+        pb={{ xs: 6, md: 8 }}
       >
         <Typography fontSize={{ xs: 26, md: 47 }} letterSpacing={2}>
           Skills
@@ -41,8 +41,8 @@ const SkillsView = () => {
               justifyContent={"center"}
               alignItems={"center"}
               flexDirection={"column"}
-              width={{ xs: 120, md: 175 }}
-              height={{ xs: 148, md: 188 }}
+              width={{ xs: 123, md: 175 }}
+              height={{ xs: 130, md: 188 }}
               borderRadius={1.5}
               bgcolor={"#FFFFFF"}
               boxShadow={"-1px 1px 5px -2px gray"}
