@@ -14,7 +14,7 @@ const AboutMeView = () => {
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
-        pt={{ xs: 14, md: 21 }}
+        pt={{ xs: 14, md: 20 }}
       >
         <Typography fontSize={{ xs: 26, md: 47 }} letterSpacing={2}>
           About me
