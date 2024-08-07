@@ -13,3 +13,9 @@ export type WorksContentsDataType = {
   worksName: string;
   worksDetail: string;
 };
+
+export type ProfileDataType = {
+  profileDate: string;
+  profileTitle: string;
+  profileDescription: string;
+};
