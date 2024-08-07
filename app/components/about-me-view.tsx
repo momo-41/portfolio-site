@@ -10,16 +10,14 @@ const AboutMeView = () => {
       px={{ md: 15 }}
       bgcolor={"#FFFFFF"}
     >
-      <Box
-        display={"flex"}
-        alignItems={"center"}
-        justifyContent={"center"}
+      <Typography
         pt={{ xs: 14, md: 20 }}
+        textAlign={"center"}
+        fontSize={{ xs: 26, md: 47 }}
+        letterSpacing={2}
       >
-        <Typography fontSize={{ xs: 26, md: 47 }} letterSpacing={2}>
-          About me
-        </Typography>
-      </Box>
+        About me
+      </Typography>
       <Box // 画像とコンテンツを横並びや縦並びにするためのBox
         display={"flex"}
         alignItems={"center"}

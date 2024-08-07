@@ -10,17 +10,15 @@ const WorksView = () => {
       pb={{ xs: 6, md: 0 }} //md:0を指定しないとxs:6がPC画面でも効いてしまう
       bgcolor={"#FFFFFF"}
     >
-      <Box
-        display={"flex"}
-        alignItems={"center"}
-        justifyContent={"center"}
+      <Typography
         pt={{ xs: 7, md: 12 }}
         pb={{ xs: 5, md: 7 }}
+        textAlign={"center"}
+        fontSize={{ xs: 26, md: 47 }}
+        letterSpacing={2}
       >
-        <Typography fontSize={{ xs: 26, md: 47 }} letterSpacing={2}>
-          Works
-        </Typography>
-      </Box>
+        Works
+      </Typography>
       <Grid
         container
         rowSpacing={{ xs: 6, md: 5 }}
