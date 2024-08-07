@@ -10,17 +10,15 @@ const SkillsView = () => {
       px={{ xs: 6, md: 48 }}
       bgcolor={"#F0F0F0"}
     >
-      <Box
-        display={"flex"}
-        alignItems={"center"}
-        justifyContent={"center"}
+      <Typography
         pt={{ xs: 10, md: 18 }}
         pb={{ xs: 6, md: 8 }}
+        textAlign={"center"}
+        fontSize={{ xs: 26, md: 47 }}
+        letterSpacing={2}
       >
-        <Typography fontSize={{ xs: 26, md: 47 }} letterSpacing={2}>
-          Skills
-        </Typography>
-      </Box>
+        Skills
+      </Typography>
       <Grid
         container
         rowSpacing={{ xs: 4, md: 5 }}
