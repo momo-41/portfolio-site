@@ -11,7 +11,7 @@ const AboutMeView = () => {
       bgcolor={"#FFFFFF"}
     >
       <Typography
-        pt={{ xs: 14, md: 20 }}
+        pt={{ xs: 13, md: 20 }}
         textAlign={"center"}
         fontSize={{ xs: 26, md: 47 }}
         letterSpacing={2}
@@ -23,7 +23,7 @@ const AboutMeView = () => {
         alignItems={"center"}
         justifyContent={"center"}
         flexDirection={{ xs: "column", md: "row" }} //PCでは横並び,SPでは縦並び
-        mt={{ md: 6 }}
+        mt={{ md: 5 }}
       >
         <Box
           height={{ md: "100%" }}
