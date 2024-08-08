@@ -11,7 +11,7 @@ const SkillsView = () => {
       bgcolor={"#F0F0F0"}
     >
       <Typography
-        pt={{ xs: 10, md: 18 }}
+        pt={{ xs: 10, md: 15 }}
         pb={{ xs: 6, md: 8 }}
         textAlign={"center"}
         fontSize={{ xs: 26, md: 47 }}
