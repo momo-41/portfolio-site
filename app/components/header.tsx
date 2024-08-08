@@ -1,15 +1,15 @@
 "use client";
 import { AppBar, Box, Button, Toolbar } from "@mui/material";
+import { eachViewLinkData } from "../const/each-view-link-data";
 
 const Header = () => {
-  const contents = ["Home", "About", "Skills", "Works", "Message"];
   return (
     <AppBar sx={{ position: "fixed", bgcolor: "transparent" }}>
       <Toolbar sx={{ justifyContent: "center" }}>
         <Box>
-          {contents.map((content) => (
+          {eachViewLinkData.map((link) => (
             <Button
-              key={content}
+              key={link.name}
               sx={{
                 color: "#373737",
                 mx: { md: 2 },
@@ -19,8 +19,9 @@ const Header = () => {
                 letterSpacing: 1,
                 textTransform: "none",
               }}
+              href={link.href}
             >
-              {content}
+              {link.name}
             </Button>
           ))}
         </Box>
@@ -28,4 +29,5 @@ const Header = () => {
     </AppBar>
   );
 };
+
 export default Header;

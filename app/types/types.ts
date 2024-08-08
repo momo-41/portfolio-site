@@ -1,3 +1,8 @@
+export type EachViewLinkType = {
+  name: string;
+  href: string;
+};
+
 export type AboutMeType = {
   title: string[];
   contents: string[];
