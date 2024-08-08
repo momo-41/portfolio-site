@@ -14,19 +14,13 @@ const MessageView = () => {
       bgcolor={"#FFFFFF"}
     >
       <Typography
-        pt={{ xs: 0, md: 1 }}
-        pb={{ xs: 10, md: 7 }}
+        pb={{ xs: 8, md: 9 }}
         fontSize={{ xs: 26, md: 47 }}
         letterSpacing={2}
       >
         Message
       </Typography>
-      <Box
-        px={{ xs: 20, md: 54 }}
-        pt={{ xs: 28, md: 37 }}
-        pb={{ xs: 17, md: 20 }}
-        bgcolor={"#E7E7E7"}
-      ></Box>
+      <Box width={{ xs: 300, md: 830 }} height={450} bgcolor={"#E7E7E7"}></Box>
     </Box>
   );
 };
