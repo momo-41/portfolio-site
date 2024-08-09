@@ -18,7 +18,7 @@ const Profile = () => {
       id={"profile"}
       px={{ xs: 0.5, md: 15 }}
       pb={{ xs: 6, md: 10 }}
-      bgcolor={"#F0F0F0"}
+      bgcolor={"rgba(240, 240, 240, 0.3)"}
     >
       <Typography
         pt={{ xs: 9, md: 11 }}
