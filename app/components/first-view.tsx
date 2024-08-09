@@ -12,12 +12,12 @@ const FirstView = () => {
       flexDirection={{ xs: "column", md: "row" }} //PCでは横並び,SPでは縦並び
       height={{ xs: "85vh", md: "100vh" }}
       px={{ md: 15 }}
-      sx={{
-        backgroundImage: `url("white-background-image-large.jpg")`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-      }}
+      // sx={{
+      //   backgroundImage: `url("white-background-image-large.jpg")`,
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundSize: "cover",
+      //   backgroundAttachment: "fixed",
+      // }}
     >
       <Box
         width={{ xs: "100%", md: "50%" }}
