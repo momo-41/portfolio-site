@@ -12,3 +12,5 @@ export const aboutMeData: AboutMeType = {
     "ルービックキューブ(早くて1分)",
   ],
 };
+
+//オブジェクトだとabout-me-viewで上手く組み立てられなかった

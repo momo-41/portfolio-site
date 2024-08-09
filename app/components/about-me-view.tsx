@@ -18,7 +18,7 @@ const AboutMeView = () => {
       >
         About me
       </Typography>
-      <Box // 画像とコンテンツを横並びや縦並びにするためのBox
+      <Box // 画像と文字を横並びや縦並びにするためのBox
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
@@ -28,7 +28,7 @@ const AboutMeView = () => {
         <Box
           height={{ md: "100%" }}
           width={{ md: "50%" }}
-          display={"flex"}
+          display={"flex"} //画像を画面の左半分の中央に
           alignItems={"center"}
           justifyContent={"center"}
           mt={{ xs: 7 }}
@@ -43,28 +43,29 @@ const AboutMeView = () => {
         </Box>
         <Box
           height={{ md: "100%" }}
-          width={{ xs: "100%", md: "50%" }}
-          display={"flex"}
+          width={{ md: "50%" }}
+          display={"flex"} //文字を画面の右半分の中央に
           alignItems={"center"}
           justifyContent={"center"}
           flexDirection={"column"} //要素を縦並びに
         >
           <Box
             display={"flex"}
-            alignItems={{ xs: "center", md: "flex-start" }}
+            alignItems={"center"}
             justifyContent={"center"}
-            mr={{ md: 5 }}
             mt={{ xs: 10 }}
+            mr={{ md: 5 }}
+            ml={{ xs: 2 }}
           >
             <Box>
               {aboutMeData.title.map((data) => (
                 <Typography
                   key={data}
-                  pr={{ xs: 3, md: 8 }}
+                  ml={{ xs: 1 }}
                   py={{ xs: 0.5, md: 0.8 }}
+                  pr={{ xs: 3, md: 8 }}
                   fontSize={{ xs: 12, md: 18 }}
                   letterSpacing={{ xs: 0.2, md: 0.5 }}
-                  ml={{ xs: 1 }}
                 >
                   {data}
                 </Typography>
