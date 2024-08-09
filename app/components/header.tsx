@@ -1,26 +1,36 @@
 "use client";
 import { AppBar, Box, Button, Toolbar } from "@mui/material";
+import { eachViewLinkData } from "../const/each-view-link-data";
+import { Link as Scroll } from "react-scroll";
 
 const Header = () => {
-  const contents = ["Home", "About", "Skills", "Works", "Message"];
   return (
-    <AppBar sx={{ position: "fixed", bgcolor: "transparent" }}>
+    <AppBar
+      sx={{
+        position: "fixed",
+        bgcolor: "transparent",
+        WebkitBackdropFilter: " blur(4px)",
+        backdropFilter: " blur(4px)",
+      }}
+    >
       <Toolbar sx={{ justifyContent: "center" }}>
         <Box>
-          {contents.map((content) => (
+          {eachViewLinkData.map((link) => (
             <Button
-              key={content}
+              key={link.name}
               sx={{
                 color: "#373737",
                 mx: { md: 2 },
-                fontSize: { xs: 11, md: 15 },
+                fontSize: { xs: 11, md: 16 },
                 fontFamily: "unset",
                 fontWeight: 550,
                 letterSpacing: 1,
                 textTransform: "none",
               }}
             >
-              {content}
+              <Scroll to={link.href} smooth={true} duration={600} offset={0}>
+                {link.name}
+              </Scroll>
             </Button>
           ))}
         </Box>
@@ -28,4 +38,5 @@ const Header = () => {
     </AppBar>
   );
 };
+
 export default Header;

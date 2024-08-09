@@ -5,6 +5,7 @@ import { WorksContentsData } from "../const/works-contents-data";
 const WorksView = () => {
   return (
     <Box
+      id={"works"}
       height={{ md: "100vh" }}
       px={{ xs: 6, md: 25 }}
       pb={{ xs: 6, md: 0 }} //md:0を指定しないとxs:6がPC画面でも効いてしまう
