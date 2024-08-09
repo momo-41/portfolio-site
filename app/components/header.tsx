@@ -4,7 +4,14 @@ import { eachViewLinkData } from "../const/each-view-link-data";
 
 const Header = () => {
   return (
-    <AppBar sx={{ position: "fixed", bgcolor: "transparent" }}>
+    <AppBar
+      sx={{
+        position: "fixed",
+        bgcolor: "transparent",
+        WebkitBackdropFilter: " blur(4px)",
+        backdropFilter: " blur(4px)",
+      }}
+    >
       <Toolbar sx={{ justifyContent: "center" }}>
         <Box>
           {eachViewLinkData.map((link) => (
@@ -13,7 +20,7 @@ const Header = () => {
               sx={{
                 color: "#373737",
                 mx: { md: 2 },
-                fontSize: { xs: 11, md: 15 },
+                fontSize: { xs: 11, md: 16 },
                 fontFamily: "unset",
                 fontWeight: 550,
                 letterSpacing: 1,
