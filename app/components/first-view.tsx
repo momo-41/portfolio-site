@@ -5,6 +5,7 @@ import Image from "next/image";
 const FirstView = () => {
   return (
     <Box
+      id={"home"}
       display={"flex"}
       alignItems={"center"}
       justifyContent={"center"}

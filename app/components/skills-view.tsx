@@ -6,6 +6,7 @@ import { skillsCardData } from "../const/skills-card-data";
 const SkillsView = () => {
   return (
     <Box
+      id={"skills"}
       height={{ xs: "85vh", md: "100vh" }}
       px={{ xs: 6, md: 48 }}
       bgcolor={"#F0F0F0"}

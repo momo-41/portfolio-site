@@ -14,7 +14,12 @@ import { ProfileData } from "../const/profile-data";
 
 const Profile = () => {
   return (
-    <Box px={{ xs: 0.5, md: 15 }} pb={{ xs: 6, md: 10 }} bgcolor={"#F0F0F0"}>
+    <Box
+      id={"profile"}
+      px={{ xs: 0.5, md: 15 }}
+      pb={{ xs: 6, md: 10 }}
+      bgcolor={"#F0F0F0"}
+    >
       <Typography
         pt={{ xs: 9, md: 11 }}
         pb={{ xs: 2, md: 7 }}

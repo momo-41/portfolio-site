@@ -9,6 +9,7 @@ const AboutMeView = () => {
       height={{ xs: "85vh", md: "100vh" }}
       px={{ md: 15 }}
       bgcolor={"#FFFFFF"}
+      id={"about-me"}
     >
       <Typography
         pt={{ xs: 13, md: 20 }}
