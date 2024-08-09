@@ -1,6 +1,7 @@
 "use client";
 import { AppBar, Box, Button, Toolbar } from "@mui/material";
 import { eachViewLinkData } from "../const/each-view-link-data";
+import { Link as Scroll } from "react-scroll";
 
 const Header = () => {
   return (
@@ -26,9 +27,10 @@ const Header = () => {
                 letterSpacing: 1,
                 textTransform: "none",
               }}
-              href={link.href}
             >
-              {link.name}
+              <Scroll to={link.href} smooth={true} duration={600} offset={0}>
+                {link.name}
+              </Scroll>
             </Button>
           ))}
         </Box>
