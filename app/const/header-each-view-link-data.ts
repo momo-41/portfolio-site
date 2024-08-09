@@ -1,6 +1,6 @@
-import { EachViewLinkType } from "../types/types";
+import { HeaderEachViewLinkType } from "../types/types";
 
-export const eachViewLinkData: EachViewLinkType[] = [
+export const headerEachViewLinkData: HeaderEachViewLinkType[] = [
   { name: "Home", href: "home" },
   { name: "About", href: "about-me" },
   { name: "Skills", href: "skills" },

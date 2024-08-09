@@ -1,7 +1,7 @@
 "use client";
 import { AppBar, Box, Button, Toolbar } from "@mui/material";
-import { eachViewLinkData } from "../const/each-view-link-data";
 import { Link as Scroll } from "react-scroll";
+import { headerEachViewLinkData } from "../const/header-each-view-link-data";
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
     >
       <Toolbar sx={{ justifyContent: "center" }}>
         <Box>
-          {eachViewLinkData.map((link) => (
+          {headerEachViewLinkData.map((link) => (
             <Button
               key={link.name}
               sx={{
