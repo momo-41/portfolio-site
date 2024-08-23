@@ -11,7 +11,7 @@ const page = () => {
     <>
       <Box
         sx={{
-          backgroundImage: `url("white-background-image-large.jpg")`,
+          backgroundImage: `url("/background/white-background-image-large.jpg")`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
