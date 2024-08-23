@@ -4,7 +4,7 @@ export const WorksContentsData: WorksContentsDataType[] = [
   {
     worksImage: "/works-thumnail/thankyou-jin.png",
     worksName: "web色紙",
-    worksDetail: "/",
+    worksDetail: "/web-shikishi",
   },
   {
     worksImage: "/works-thumnail/thankyou-jin.png",
