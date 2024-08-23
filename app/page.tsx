@@ -8,23 +8,21 @@ import { Box } from "@mui/material";
 
 const page = () => {
   return (
-    <>
-      <Box
-        sx={{
-          backgroundImage: `url("/background/white-background-image.jpg")`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        <FirstView />
-        <AboutMeView />
-        <SkillsView />
-        <WorksView />
-        <ProfileView />
-        <MessageView />
-      </Box>
-    </>
+    <Box
+      sx={{
+        backgroundImage: `url("/background/white-background-image.jpg")`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <FirstView />
+      <AboutMeView />
+      <SkillsView />
+      <WorksView />
+      <ProfileView />
+      <MessageView />
+    </Box>
   );
 };
 
