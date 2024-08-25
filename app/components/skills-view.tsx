@@ -9,7 +9,7 @@ const SkillsView = () => {
       id={"skills"}
       height={{ xs: "85vh", md: "100vh" }}
       px={{ xs: 6, md: 48 }}
-      bgcolor={"rgba(240, 240, 240, 0.3)"}
+      bgcolor={"rgba(210, 210, 210, 0.2)"}
     >
       <Typography
         pt={{ xs: 10, md: 15 }}

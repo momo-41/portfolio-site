@@ -4,31 +4,31 @@ export const WorksContentsData: WorksContentsDataType[] = [
   {
     worksImage: "/works-thumnail/thankyou-jin.png",
     worksName: "web色紙",
-    worksDetail: "/",
+    worksDetail: "/web-shikishi",
   },
   {
     worksImage: "/works-thumnail/thankyou-jin.png",
     worksName: "CanBook",
-    worksDetail: "/",
+    worksDetail: "/canbook",
   },
   {
     worksImage: "/works-thumnail/peachtech-tutorial.png",
     worksName: "PeachTechチュートリアル",
-    worksDetail: "/",
+    worksDetail: "/tutorial",
   },
   {
     worksImage: "/works-thumnail/portfolio-site.png",
     worksName: "ポートフォリオサイト",
-    worksDetail: "/",
+    worksDetail: "/portfolio",
   },
-  {
-    worksImage: "/works-thumnail/thankyou-jin.png",
-    worksName: "Vueキャッチアップ",
-    worksDetail: "/",
-  },
-  {
-    worksImage: "/works-thumnail/thankyou-jin.png",
-    worksName: "逆算",
-    worksDetail: "/",
-  },
+  // {
+  //   worksImage: "/works-thumnail/thankyou-jin.png",
+  //   worksName: "Vueキャッチアップ",
+  //   worksDetail: "/",
+  // },
+  // {
+  //   worksImage: "/works-thumnail/thankyou-jin.png",
+  //   worksName: "逆算",
+  //   worksDetail: "/",
+  // },
 ];
