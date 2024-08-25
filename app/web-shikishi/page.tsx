@@ -1,6 +1,7 @@
 import React from "react";
-import WorksDetail from "../components/works-detail";
 import { Box } from "@mui/material";
+import WorksDetail from "../components/works-detail";
+import { WebShikishiDetailData } from "../const/works-detail-data";
 
 const Page = () => {
   return (
@@ -14,7 +15,14 @@ const Page = () => {
         bgcolor: "rgba(210, 210, 210, 0.3)",
       }}
     >
-      <WorksDetail />
+      <WorksDetail
+        workTitle={WebShikishiDetailData.workTitle}
+        workContents={WebShikishiDetailData.workContents}
+        workDetail={WebShikishiDetailData.workDetail}
+        workFirstImage={WebShikishiDetailData.workFirstImage}
+        workSecondImage={WebShikishiDetailData.workSecondImage}
+        workPointContents={WebShikishiDetailData.workPointContents}
+      />
     </Box>
   );
 };

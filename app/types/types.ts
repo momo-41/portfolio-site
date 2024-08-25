@@ -24,3 +24,12 @@ export type ProfileDataType = {
   profileTitle: string;
   profileDescription: string;
 };
+
+export type WorksDetailProps = {
+  workTitle: string;
+  workContents: string;
+  workDetail: string[];
+  workFirstImage: string;
+  workSecondImage: string;
+  workPointContents: string[];
+};
