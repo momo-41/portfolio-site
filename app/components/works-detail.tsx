@@ -18,8 +18,7 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
         pb={0.5}
         pl={3}
         fontFamily={"sans-serif"}
-        fontSize={26}
-        fontWeight={550}
+        fontSize={27}
         letterSpacing={1.5}
         borderBottom={1.5}
         borderColor={"#C4C4C4"}
@@ -28,21 +27,27 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
       </Typography>
       {/* プロダクトの説明と詳細 */}
       <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
-        <Box flexDirection={"column"} mx={5} mt={3}>
-          <Typography mb={3} fontSize={17} letterSpacing={1}>
-            {workContents}
-          </Typography>
-          <Box p={5} bgcolor={"#EFEFEF"}>
+        <Box flexDirection={"column"} mx={5.5} mt={3}>
+          <Box mb={3}>
+            {workContents.map((content) => (
+              <ContentsTypography key={content}>{content}</ContentsTypography>
+            ))}
+          </Box>
+          <Box px={4.5} py={4} bgcolor={"#EFEFEF"}>
             {workDetail.map((detail) => (
-              <Box key={detail} letterSpacing={1.5}>
+              <Typography
+                key={detail}
+                letterSpacing={1.5}
+                fontFamily={"sans-serif"}
+              >
                 {detail}
-              </Box>
+              </Typography>
             ))}
           </Box>
         </Box>
         <Box>
           <Image
-            width={600}
+            width={580}
             height={400}
             src={workFirstImage}
             alt={"制作物のスクリーンショット"}
@@ -60,7 +65,7 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
       >
         <Box>
           <Image
-            width={600}
+            width={580}
             height={400}
             src={workSecondImage}
             alt={"制作物のスクリーンショット"}
@@ -79,7 +84,7 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
           </Typography>
           <Box mt={4} ml={1}>
             {workPointContents.map((point) => (
-              <ThemeTypography key={point}>{point}</ThemeTypography>
+              <PointTypography key={point}>{point}</PointTypography>
             ))}
           </Box>
         </Box>
@@ -87,10 +92,29 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
     </Box>
   );
 };
+// const ContentsTypography = styled(Typography)(({ theme }) => ({
+//   fontSize: 17,
+//   marginTop: 3,
+//   letterSpacing: 1,
+//   // [theme.breakpoints.down("md")]: {
+//   //   width: 130,
+//   //   height: 130,
+//   // },
+// }));
 
-const ThemeTypography = styled(Typography)(({ theme }) => ({
+const ContentsTypography = styled(Typography)(({ theme }) => ({
   fontSize: 17,
-  marginTop: 16,
+  marginTop: 3,
+  letterSpacing: 1,
+  // [theme.breakpoints.down("md")]: {
+  //   width: 130,
+  //   height: 130,
+  // },
+}));
+
+const PointTypography = styled(Typography)(({ theme }) => ({
+  fontSize: 17,
+  marginTop: 15,
   letterSpacing: 1,
   // [theme.breakpoints.down("md")]: {
   //   width: 130,

@@ -27,7 +27,7 @@ export type ProfileDataType = {
 
 export type WorksDetailProps = {
   workTitle: string;
-  workContents: string;
+  workContents: string[];
   workDetail: string[];
   workFirstImage: string;
   workSecondImage: string;
