@@ -6,13 +6,13 @@ import { WebShikishiDetailData } from "../const/works-detail-data";
 const Page = () => {
   return (
     <Box
+      pb={{ xs: 8, md: 12 }}
+      bgcolor={"rgba(210, 210, 210, 0.3)"}
       sx={{
-        pb: 12,
         backgroundImage: `url("/background/white-background-image.jpg")`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
-        bgcolor: "rgba(210, 210, 210, 0.3)",
       }}
     >
       <WorksDetail

@@ -12,13 +12,21 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
   workPointContents,
 }) => {
   return (
-    <Box mx={15} pt={13} pb={10} pl={8} pr={6} bgcolor={"white"}>
+    <Box
+      mx={{ xs: 2, md: 15 }}
+      pt={{ xs: 10, md: 13 }}
+      pb={{ md: 10 }}
+      pl={{ xs: 1, md: 8 }}
+      pr={{ md: 6 }}
+      bgcolor={"white"}
+    >
       <Typography
+        mr={1}
         ml={1}
         pb={0.5}
-        pl={3}
+        pl={{ xs: 1, md: 3 }}
         fontFamily={"sans-serif"}
-        fontSize={27}
+        fontSize={{ xs: 19, md: 27 }}
         letterSpacing={1.5}
         borderBottom={1.5}
         borderColor={"#C4C4C4"}
@@ -26,18 +34,34 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
         {workTitle}
       </Typography>
       {/* プロダクトの説明と詳細 */}
-      <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
-        <Box flexDirection={"column"} mx={5.5} mt={3}>
+      <Box
+        display={"flex"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        flexDirection={{ xs: "column-reverse", md: "row" }}
+        mt={{ xs: 2, md: 0 }}
+      >
+        <Box
+          width={{ md: "45%" }}
+          flexDirection={"column"}
+          mx={{ xs: 2, md: 5.5 }}
+          mt={3}
+        >
           <Box mb={3}>
             {workContents.map((content) => (
               <ContentsTypography key={content}>{content}</ContentsTypography>
             ))}
           </Box>
-          <Box px={4.5} py={4} bgcolor={"#EFEFEF"}>
+          <Box
+            px={{ xs: 3, md: 4.5 }}
+            py={{ xs: 3, md: 4 }}
+            bgcolor={"#EFEFEF"}
+          >
             {workDetail.map((detail) => (
               <Typography
                 key={detail}
                 letterSpacing={1.5}
+                fontSize={{ xs: 12, md: 16 }}
                 fontFamily={"sans-serif"}
               >
                 {detail}
@@ -45,12 +69,17 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
             ))}
           </Box>
         </Box>
-        <Box>
+        <Box width={{ xs: "85%", md: "55%" }}>
+          {/* ImageをStyledコンポーネントでまとめてもcss量が変わらなかった */}
           <Image
             width={580}
             height={400}
             src={workFirstImage}
             alt={"制作物のスクリーンショット"}
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
             priority
           />
         </Box>
@@ -61,28 +90,40 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
-        mt={15}
+        flexDirection={{ xs: "column-reverse", md: "row" }}
+        mt={{ xs: 10, md: 15 }}
+        pb={{ xs: 7 }}
       >
-        <Box>
+        <Box width={{ xs: "85%", md: "55%" }}>
+          {/* 上の<Image/>とほとんど同じ */}
           <Image
             width={580}
             height={400}
             src={workSecondImage}
             alt={"制作物のスクリーンショット"}
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
             priority
           />
         </Box>
-        <Box flexDirection={"column"} mx={5} mt={2}>
+        <Box
+          width={{ md: "45%" }}
+          flexDirection={"column"}
+          mx={{ xs: 2, md: 5 }}
+          mt={{ xs: 0, md: 2 }}
+        >
           <Typography
             pb={0.5}
-            fontSize={20}
-            letterSpacing={2}
+            fontSize={{ xs: 17, md: 20 }}
+            letterSpacing={{ xs: 1, md: 2 }}
             borderBottom={1.5}
             borderColor={"#C4C4C4"}
           >
             こだわったところ
           </Typography>
-          <Box mt={4} ml={1}>
+          <Box mt={{ xs: 3, md: 4 }} mb={{ xs: 3, md: 0 }} ml={1}>
             {workPointContents.map((point) => (
               <PointTypography key={point}>{point}</PointTypography>
             ))}
@@ -92,34 +133,24 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
     </Box>
   );
 };
-// const ContentsTypography = styled(Typography)(({ theme }) => ({
-//   fontSize: 17,
-//   marginTop: 3,
-//   letterSpacing: 1,
-//   // [theme.breakpoints.down("md")]: {
-//   //   width: 130,
-//   //   height: 130,
-//   // },
-// }));
 
 const ContentsTypography = styled(Typography)(({ theme }) => ({
-  fontSize: 17,
+  fontSize: 16,
   marginTop: 3,
   letterSpacing: 1,
-  // [theme.breakpoints.down("md")]: {
-  //   width: 130,
-  //   height: 130,
-  // },
+  [theme.breakpoints.down("md")]: {
+    fontSize: 15,
+  },
 }));
 
 const PointTypography = styled(Typography)(({ theme }) => ({
-  fontSize: 17,
+  fontSize: 16,
   marginTop: 15,
   letterSpacing: 1,
-  // [theme.breakpoints.down("md")]: {
-  //   width: 130,
-  //   height: 130,
-  // },
+  [theme.breakpoints.down("md")]: {
+    fontSize: 15,
+    marginTop: 13,
+  },
 }));
 
 export default WorksDetail;
