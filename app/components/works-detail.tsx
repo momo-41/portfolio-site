@@ -17,8 +17,10 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
         ml={1}
         pb={0.5}
         pl={3}
-        fontSize={30}
-        letterSpacing={2}
+        fontFamily={"sans-serif"}
+        fontSize={26}
+        fontWeight={550}
+        letterSpacing={1.5}
         borderBottom={1.5}
         borderColor={"#C4C4C4"}
       >
@@ -32,7 +34,7 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
           </Typography>
           <Box p={5} bgcolor={"#EFEFEF"}>
             {workDetail.map((detail) => (
-              <Box key={detail} letterSpacing={1}>
+              <Box key={detail} letterSpacing={1.5}>
                 {detail}
               </Box>
             ))}
