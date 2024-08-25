@@ -6,7 +6,7 @@ export const WebShikishiDetailData: WorksDetailProps = {
     "卒業する先輩へのweb色紙を制作しました。私が所属するプログラミングサークルを創設してくださった方で『感謝×プログラミング』として開発することを決めました。私の初めてのプロダクトです。",
   workDetail: [
     "開発技術 ： Next.js, TypeScript",
-    "その他　 ： Material UI, Vercel(デプロイ)",
+    "その他　 ： MUI, Vercel(デプロイ)",
     "制作時期 ： 2024年2月",
     "制作期間 ： 1ヶ月",
   ],
@@ -20,27 +20,54 @@ export const WebShikishiDetailData: WorksDetailProps = {
 
 export const CanBookDetailData: WorksDetailProps = {
   workTitle: "CanBook",
-  workContents: "",
-  workDetail: [],
-  workFirstImage: "",
-  workSecondImage: "",
-  workPointContents: [],
+  workContents:
+    "あああああああああああああああああああああああああああああああああああああああ",
+  workDetail: [
+    "開発技術 ： Next.js, TypeScript, Go",
+    "その他　 ： MUI, Vercel(デプロイ), PostgreSQL, docker",
+    "制作時期 ： 2024年3月",
+    "制作期間 ： 1ヶ月",
+  ],
+  workFirstImage: "/works-detail/web-shikishi.png",
+  workSecondImage: "/works-detail/web-shikishi.png",
+  workPointContents: [
+    "あああああああああああああああああああああああああ",
+    "あああああああああああああああああああああああああああああああ",
+  ],
 };
 
 export const TutorialDetailData: WorksDetailProps = {
   workTitle: "PeachTechチュートリアル",
-  workContents: "",
-  workDetail: [],
-  workFirstImage: "",
-  workSecondImage: "",
-  workPointContents: [],
+  workContents:
+    "あああああああああああああああああああああああああああああああああああああああ",
+  workDetail: [
+    "開発技術 ： Next.js, TypeScript",
+    "その他　 ： MUI, Vercel(デプロイ)",
+    "制作時期 ： 2024年5月",
+    "制作期間 ： 2ヶ月",
+  ],
+  workFirstImage: "/works-detail/web-shikishi.png",
+  workSecondImage: "/works-detail/web-shikishi.png",
+  workPointContents: [
+    "あああああああああああああああああああああああああ",
+    "あああああああああああああああああああああああああああああああ",
+  ],
 };
 
 export const PortfolioDetailData: WorksDetailProps = {
   workTitle: "ポートフォリオサイト",
-  workContents: "",
-  workDetail: [],
-  workFirstImage: "",
-  workSecondImage: "",
-  workPointContents: [],
+  workContents:
+    "あああああああああああああああああああああああああああああああああああああああ",
+  workDetail: [
+    "開発技術 ： Next.js, TypeScript",
+    "その他　 ： MUI, Vercel(デプロイ)",
+    "制作時期 ： 2024年8月",
+    "制作期間 ： 1ヶ月",
+  ],
+  workFirstImage: "/works-detail/web-shikishi.png",
+  workSecondImage: "/works-detail/web-shikishi.png",
+  workPointContents: [
+    "あああああああああああああああああああああああああ",
+    "あああああああああああああああああああああああああああああああ",
+  ],
 };
