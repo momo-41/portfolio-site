@@ -37,7 +37,7 @@ const AboutMeView = () => {
           <MyVsignImage
             width={290}
             height={290}
-            src={"/my-v-sign-picture.jpg"}
+            src={"/my-picture/my-v-sign-picture.jpg"}
             alt={"PC作業中の写真"}
             priority
           />

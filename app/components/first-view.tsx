@@ -47,7 +47,7 @@ const FirstView = () => {
         <MyPCImage
           width={490}
           height={365}
-          src={"/my-pc-picture.jpg"}
+          src={"/my-picture/my-pc-picture.jpg"}
           alt={"PC作業中の写真"}
           priority
         />
