@@ -60,7 +60,7 @@ export const TutorialDetailData: WorksDetailProps = {
   workSecondImage: "/works-detail/PeachTech-tutorial.png",
   workPointContents: [
     "このチュートリアルサイトでは現在6つのStepがありますが、適宜Stepを追加していくことを想定してコンポーネント分割を丁寧にして開発しました。",
-    "データさえあれば容易にページを作れるよう、UIに関するコードとデータ反映をさせるコードを切り離しています。(3枚目の画像)",
+    "データさえあれば容易にページを作れるよう、UIに関するコードとデータ反映をさせるコードを切り離しています。", //(3枚目の画像)というふうに書きたい
   ],
 };
 
