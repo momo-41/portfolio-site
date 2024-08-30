@@ -35,8 +35,8 @@ export const CanBookDetailData: WorksDetailProps = {
     "制作期間 ： 1ヶ月",
     "開発担当 ： 企画, デザイン, 開発(フロント)",
   ],
-  workFirstImage: "/works-detail/web-shikishi.png",
-  workSecondImage: "/works-detail/web-shikishi.png",
+  workFirstImage: "/works-detail/CanBook.png",
+  workSecondImage: "/works-detail/CanBook.png",
   workPointContents: [
     "細かいこだわりを持って開発することはできなかったのですが、フリマアプリとしての最低限の機能をとにかく実装することを意識しました。ログイン機能・出品機能・検索機能・メッセージ機能など、プログラミングにまだ慣れていないながら機能的なアプリを開発するために多くのプロダクトを参考にして開発しました。",
     "まだまだ不完全な機能が多いため、今後も継続的に開発していこうと考えています。",
