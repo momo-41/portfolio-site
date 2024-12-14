@@ -87,7 +87,7 @@ export const PortfolioDetailData: WorksDetailProps = {
   workFirstImage: "/works-detail/portfolio-site.png",
   workSecondImage: "/works-detail/portfolio-site.png",
   workPointContents: [
-    "私しか開発しないからこそ、フォントや余白の取り方を細かく設定して違和感のない配置で制作するところにこだわりました。またパララックスやヘッダーの透かしが気に入っています。",
+    "私しか開発しないからこそ、フォントや余白の取り方を細かく設定して違和感のない配置で制作するところにこだわりました。パララックスやヘッダーの透かしが気に入っています。",
     "面接などで伝えきれない分を補うために可能な限り詳細かつ簡潔に伝えられるようこだわりました。(WorksやProfile)",
     "About meやSkillsは現段階で表面的な情報が多いため、どんな人物かどんな機能を扱えて業務レベルでどのくらい開発ができるかなど、デザインも意識しながら今後改良していきます。",
   ],
