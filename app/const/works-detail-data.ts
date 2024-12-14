@@ -17,7 +17,7 @@ export const WebShikishiDetailData: WorksDetailProps = {
   workFirstImage: "/works-detail/web-shikishi.png",
   workSecondImage: "/works-detail/web-shikishi-second.png",
   workPointContents: [
-    "卒業年度ごとに色を分けたところです。サークルで使用しているコミュニケーションツールの学年ごとにロールを設定しており、その色と同じ色にしました。そうすることで、直感的にどの学年のメッセージがあるか分かるようになると考えました。",
+    "卒業年度ごとに色を分けたところです。サークルで使用しているコミュニケーションツールにて学年ごとにロールを設定しており、その色と同じ色にしました。そうすることで、直感的にどの学年のメッセージがあるか分かるようになると考えました。",
     "通常、一部の機能を動的にしたい際はReactの機能であるPropsの受け渡しを行いますが、colorの場合は上手く機能しなかったためMUIのstyled関数を利用して実装しました。",
   ],
 };
