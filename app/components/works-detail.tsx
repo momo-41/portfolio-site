@@ -11,14 +11,14 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
   workSecondImage,
   workPointContents,
 }) => {
-  const workDetailItems: WorkDetailItem[] = [
-    { label: "開発技術", content: workDetail[0] },
-    { label: "その他", content: workDetail[1] },
-    { label: "制作時期", content: workDetail[2] },
-    { label: "制作期間", content: workDetail[3] },
-    { label: "開発担当", content: workDetail[4] },
-    { label: "URL", content: workDetail[5] },
-    { label: "GitHub", content: workDetail[6] },
+  const workDetailLabels = [
+    "開発技術",
+    "その他",
+    "制作時期",
+    "制作期間",
+    "開発担当",
+    "URL",
+    "GitHub",
   ];
 
   return (
@@ -63,30 +63,35 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
             ))}
           </Box>
           <Box
+            display={"flex"}
             px={{ xs: 3, md: 4.5 }}
             py={{ xs: 3, md: 4 }}
             bgcolor={"#EFEFEF"}
           >
-            {workDetailItems.map((item, index) => (
-              <Box key={index} display={"flex"} mb={1}>
-                <Typography
-                  minWidth={83}
-                  letterSpacing={1.5}
-                  fontSize={{ xs: 12, md: 16 }}
-                  fontFamily={"sans-serif"}
-                >
-                  {item.label}
-                </Typography>
-                :　
+            <Box>
+              {workDetailLabels.map((item, index) => (
                 <Typography
                   letterSpacing={1.5}
                   fontSize={{ xs: 12, md: 16 }}
                   fontFamily={"sans-serif"}
                 >
-                  {item.content}
+                  {item}
                 </Typography>
-              </Box>
-            ))}
+              ))}
+            </Box>
+            <Box>
+              {workDetail.map((item, index) => (
+                <Box key={index} display={"flex"} mb={1}>
+                  <Typography
+                    letterSpacing={1.5}
+                    fontSize={{ xs: 12, md: 16 }}
+                    fontFamily={"sans-serif"}
+                  >
+                    ： {item}
+                  </Typography>
+                </Box>
+              ))}
+            </Box>
           </Box>
         </Box>
         <Box width={{ xs: "85%", md: "55%" }}>
