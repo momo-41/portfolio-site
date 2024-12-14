@@ -53,7 +53,7 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
       mx={{ xs: 2, md: 15 }}
       pt={{ xs: 10, md: 13 }}
       pb={{ md: 10 }}
-      pl={{ xs: 1, md: 8 }}
+      pl={{ md: 8 }}
       pr={{ md: 6 }}
       bgcolor={"white"}
     >
@@ -81,22 +81,24 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
         <Box
           width={{ md: "45%" }}
           flexDirection={"column"}
-          mx={{ xs: 2, md: 5.5 }}
+          mx={{ xs: 1.5, md: 5.5 }}
           mt={3}
         >
-          <Box mb={3}>
+          <Box mb={3} mx={{ xs: 1.5, md: 0 }}>
+            {/* md:0をつけないとxs:1.5がPCの画面の時にも効いてしまう */}
             {workContents.map((content) => (
               <ContentsTypography key={content}>{content}</ContentsTypography>
             ))}
           </Box>
           <Box
+            maxWidth={{ xs: 290, md: "inherit" }} // md:0 や md:null だと灰色部分の width が狭くなってしまうため"inherit"を指定して親要素の値を継承するようにしている
             px={{ xs: 3, md: 4 }}
             pt={{ xs: 3, md: 4 }}
             pb={{ xs: 2, md: 3 }}
             bgcolor={"#EFEFEF"}
           >
             {WorkDetailItems.map((item, index) => (
-              <Box key={index} display={"flex"} mb={0.8}>
+              <Box key={index} display={"flex"} mb={{ xs: 0.3, md: 0.8 }}>
                 <Typography minWidth={83} sx={commonTextStyle}>
                   {item.label}
                 </Typography>
@@ -206,7 +208,7 @@ const PointTypography = styled(Typography)(({ theme }) => ({
 
 const commonTextStyle = {
   letterSpacing: 1.5,
-  fontSize: { xs: 12, md: 16 },
+  fontSize: { xs: 12, md: 15 },
   fontFamily: "sans-serif",
 };
 
