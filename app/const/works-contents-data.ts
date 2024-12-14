@@ -21,6 +21,11 @@ export const WorksContentsData: WorksContentsDataType[] = [
     worksName: "ポートフォリオサイト",
     worksDetail: "/portfolio",
   },
+  {
+    worksImage: "/works-thumnail/Cocofill.png",
+    worksName: "Cocofill",
+    worksDetail: "/cocofill",
+  },
   // {
   //   worksImage: "/works-thumnail/thankyou-jin.png",
   //   worksName: "Vueキャッチアップ",

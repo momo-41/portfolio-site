@@ -92,3 +92,28 @@ export const PortfolioDetailData: WorksDetailProps = {
     "About meやSkillsは現段階で表面的な情報が多いため、どんな人物かどんな機能を扱えて業務レベルでどのくらい開発ができるかなど、デザインも意識しながら今後改良していきます。",
   ],
 };
+
+export const CocofillDetailData: WorksDetailProps = {
+  workTitle: "Cocofill",
+  workContents: [
+    "従業員の希望の働き方に合わせたシフト作成ができるアプリケーションです。",
+    "週4希望だけど5日分のシフトを提出する人、土日どちらかは休みがいい、などの希望に対して、適切にシフト作成ができているか一画面で確認しながらシフト作成ができます。",
+    "フリー株式会社の選考課題として開発をしました。",
+  ],
+  workDetail: [
+    "Next.js, TypeScript, Rails",
+    "MUI, Vercel, Render",
+    "2024年11月",
+    "2週間",
+    "企画, デザイン, 開発",
+    "https://cocofill-two.vercel.app",
+    "https://github.com/momo-41/Cocofill",
+  ],
+  workFirstImage: "/works-detail/Cocofill.png",
+  workSecondImage: "/works-detail/Cocofill-second.png",
+  workPointContents: [
+    "右側の希望比較の欄にて、希望の出勤日数に対して現在作成しているシフトが適切かどうかを比較しています。",
+    "適切な場合は「◎」、適切でない場合は「※」を表示させています。",
+    "こだわった点として、「◎」や「※」のみの表示だと、シフトをどのように修正すればいいか分からないと感じたため、かっこ()を使って適切な出勤数の表示をしました。",
+  ],
+};
