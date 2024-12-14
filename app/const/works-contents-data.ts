@@ -2,7 +2,7 @@ import { WorksContentsDataType } from "../types/types";
 
 export const WorksContentsData: WorksContentsDataType[] = [
   {
-    worksImage: "/works-thumnail/web-shikishi2.png",
+    worksImage: "/works-thumnail/web-shikishi-native.png",
     worksName: "web色紙",
     worksDetail: "/web-shikishi",
   },
