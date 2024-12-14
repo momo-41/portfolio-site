@@ -43,9 +43,21 @@ export const ProfileData: ProfileDataType[] = [
     profileDescription:
       "一ヶ月間のハッカソンで即席チーム(2人)での参加\nフロントエンドを担当しCanBookを開発\nユーザー課題やプロダクトに共感していただき\n株式会社 東京ドーム様から企業賞を受賞",
   },
-  {
-    profileDate: "2024/7-現在",
-    profileTitle: "株式会社コムスクエアで長期インターンを開始",
-    profileDescription: "",
-  },
+  // {
+  //   profileDate: "2024/9",
+  //   profileTitle: "株式会社エムティーアイのサマーインターンシップに参加",
+  //   profileDescription:
+  //     "7日間のインターンシップで企画, マーケティング, 開発を行った",
+  // },
+  // {
+  //   profileDate: "2024/9",
+  //   profileTitle: "フリー株式会社のサマーインターンシップに参加",
+  //   profileDescription:
+  //     "3日間の個人開発で勤怠管理に関するアプリを制作",
+  // },
+  // {
+  //   profileDate: "2024/7-現在",
+  //   profileTitle: "株式会社コムスクエアで長期インターンを開始",
+  //   profileDescription: "",
+  // },
 ];
