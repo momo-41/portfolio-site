@@ -85,7 +85,7 @@ export const PortfolioDetailData: WorksDetailProps = {
     "https://github.com/momo-41/portfolio-site",
   ],
   workFirstImage: "/works-detail/portfolio-site.png",
-  workSecondImage: "/works-detail/portfolio-site.png",
+  workSecondImage: "/works-detail/portfolio-site-second.png",
   workPointContents: [
     "私しか開発しないからこそ、フォントや余白の取り方を細かく設定して違和感のない配置で制作するところにこだわりました。パララックスやヘッダーの透かしが気に入っています。",
     "面接などで伝えきれない分を補うために可能な限り詳細かつ簡潔に伝えられるようこだわりました。(WorksやProfile)",
