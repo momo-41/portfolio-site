@@ -1,5 +1,5 @@
 "use client";
-import { Box, Typography, styled } from "@mui/material";
+import { Box, Link, Typography, styled } from "@mui/material";
 import Image from "next/image";
 import { WorkDetailItem, WorksDetailProps } from "../types/types";
 
@@ -90,28 +90,32 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
             ))}
           </Box>
           <Box
-            px={{ xs: 3, md: 4.5 }}
-            py={{ xs: 3, md: 4 }}
+            px={{ xs: 3, md: 4 }}
+            pt={{ xs: 3, md: 4 }}
+            pb={{ xs: 2, md: 3 }}
             bgcolor={"#EFEFEF"}
           >
             {WorkDetailItems.map((item, index) => (
-              <Box key={index} display={"flex"} mb={1}>
-                <Typography
-                  minWidth={83}
-                  letterSpacing={1.5}
-                  fontSize={{ xs: 12, md: 16 }}
-                  fontFamily={"sans-serif"}
-                >
+              <Box key={index} display={"flex"} mb={0.8}>
+                <Typography minWidth={83} sx={commonTextStyle}>
                   {item.label}
                 </Typography>
                 :　
-                <Typography
-                  letterSpacing={1.5}
-                  fontSize={{ xs: 12, md: 16 }}
-                  fontFamily={"sans-serif"}
-                >
-                  {item.content}
-                </Typography>
+                {/* ここから三項演算子 */}
+                {item.label === "URL" || item.label === "GitHub" ? (
+                  <Link
+                    href={item.content}
+                    target="_blank" // 別タブで開く
+                    rel="noopener noreferrer" // セキュリティ対策
+                    color="primary" // デフォルトのリンク色を使用
+                    underline="hover"
+                    sx={commonTextStyle}
+                  >
+                    {item.content}
+                  </Link>
+                ) : (
+                  <Typography sx={commonTextStyle}>{item.content}</Typography>
+                )}
               </Box>
             ))}
           </Box>
@@ -199,5 +203,11 @@ const PointTypography = styled(Typography)(({ theme }) => ({
     marginTop: 13,
   },
 }));
+
+const commonTextStyle = {
+  letterSpacing: 1.5,
+  fontSize: { xs: 12, md: 16 },
+  fontFamily: "sans-serif",
+};
 
 export default WorksDetail;
