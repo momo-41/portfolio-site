@@ -39,7 +39,7 @@ export const CanBookDetailData: WorksDetailProps = {
     "https://github.com/shiori-42/CanBook",
   ],
   workFirstImage: "/works-detail/CanBook.png",
-  workSecondImage: "/works-detail/CanBook.png",
+  workSecondImage: "/works-detail/CanBook-second.png",
   workPointContents: [
     "細かいこだわりを持って開発することはできなかったのですが、フリマアプリとしての最低限の機能をとにかく実装することを意識しました。ログイン機能・出品機能・検索機能・メッセージ機能など、プログラミングにまだ慣れていないながら機能的なアプリを開発するために多くのプロダクトを参考にして開発しました。",
     "まだまだ不完全な機能が多いため、今後も継続的に開発していこうと考えています。",

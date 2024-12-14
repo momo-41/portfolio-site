@@ -2,7 +2,7 @@ import { WorksContentsDataType } from "../types/types";
 
 export const WorksContentsData: WorksContentsDataType[] = [
   {
-    worksImage: "/works-thumnail/thankyou-jin.png",
+    worksImage: "/works-thumnail/web-shikishi2.png",
     worksName: "web色紙",
     worksDetail: "/web-shikishi",
   },
@@ -12,17 +12,17 @@ export const WorksContentsData: WorksContentsDataType[] = [
     worksDetail: "/canbook",
   },
   {
-    worksImage: "/works-thumnail/peachtech-tutorial.png",
+    worksImage: "/works-thumnail/peachtech-tutorial2.png",
     worksName: "PeachTechチュートリアル",
     worksDetail: "/tutorial",
   },
   {
-    worksImage: "/works-thumnail/portfolio-site.png",
+    worksImage: "/works-thumnail/portfolio-site2.png",
     worksName: "ポートフォリオサイト",
     worksDetail: "/portfolio",
   },
   {
-    worksImage: "/works-thumnail/Cocofill.png",
+    worksImage: "/works-thumnail/Cocofill2.png",
     worksName: "Cocofill",
     worksDetail: "/cocofill",
   },
