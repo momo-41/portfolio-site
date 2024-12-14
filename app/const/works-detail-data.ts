@@ -15,7 +15,7 @@ export const WebShikishiDetailData: WorksDetailProps = {
     "デザイン, 開発全般",
   ],
   workFirstImage: "/works-detail/web-shikishi.png",
-  workSecondImage: "/works-detail/web-shikishi.png",
+  workSecondImage: "/works-detail/web-shikishi-second.png",
   workPointContents: [
     "卒業年度ごとに色を分けたところです。サークルで使用しているコミュニケーションツールの学年ごとにロールを設定しており、その色と同じ色にしました。そうすることで、直感的にどの学年のメッセージがあるか分かるようになると考えました。",
     "通常、一部の機能を動的にしたい際はReactの機能であるPropsの受け渡しを行いますが、colorの場合は上手く機能しなかったためMUIのstyled関数を利用して実装しました。",
@@ -61,7 +61,7 @@ export const TutorialDetailData: WorksDetailProps = {
     "企画, デザイン, 文言, 開発",
   ],
   workFirstImage: "/works-detail/PeachTech-tutorial.png",
-  workSecondImage: "/works-detail/PeachTech-tutorial.png",
+  workSecondImage: "/works-detail/PeachTech-tutorial-second.png",
   workPointContents: [
     "このチュートリアルサイトでは現在6つのStepがありますが、適宜Stepを追加していくことを想定してコンポーネント分割を丁寧にして開発しました。",
     "データさえあれば容易にページを作れるよう、UIに関するコードとデータ反映をさせるコードを切り離しています。", //(3枚目の画像)というふうに書きたい
