@@ -1,7 +1,7 @@
 "use client";
 import { Box, Typography, styled } from "@mui/material";
 import Image from "next/image";
-import { WorksDetailProps } from "../types/types";
+import { WorkDetailItem, WorksDetailProps } from "../types/types";
 
 const WorksDetail: React.FC<WorksDetailProps> = ({
   workTitle,
@@ -11,6 +11,16 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
   workSecondImage,
   workPointContents,
 }) => {
+  const workDetailItems: WorkDetailItem[] = [
+    { label: "開発技術", content: workDetail[0] },
+    { label: "その他", content: workDetail[1] },
+    { label: "制作時期", content: workDetail[2] },
+    { label: "制作期間", content: workDetail[3] },
+    { label: "開発担当", content: workDetail[4] },
+    { label: "URL", content: workDetail[5] },
+    { label: "GitHub", content: workDetail[6] },
+  ];
+
   return (
     <Box
       mx={{ xs: 2, md: 15 }}
@@ -57,15 +67,25 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
             py={{ xs: 3, md: 4 }}
             bgcolor={"#EFEFEF"}
           >
-            {workDetail.map((detail) => (
-              <Typography
-                key={detail}
-                letterSpacing={1.5}
-                fontSize={{ xs: 12, md: 16 }}
-                fontFamily={"sans-serif"}
-              >
-                {detail}
-              </Typography>
+            {workDetailItems.map((item, index) => (
+              <Box key={index} display={"flex"} mb={1}>
+                <Typography
+                  minWidth={83}
+                  letterSpacing={1.5}
+                  fontSize={{ xs: 12, md: 16 }}
+                  fontFamily={"sans-serif"}
+                >
+                  {item.label}
+                </Typography>
+                :　
+                <Typography
+                  letterSpacing={1.5}
+                  fontSize={{ xs: 12, md: 16 }}
+                  fontFamily={"sans-serif"}
+                >
+                  {item.content}
+                </Typography>
+              </Box>
             ))}
           </Box>
         </Box>
