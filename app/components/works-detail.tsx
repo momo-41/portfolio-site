@@ -11,7 +11,19 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
   workSecondImage,
   workPointContents,
 }) => {
-  const workDetailLabels = [
+  // const workDetailItems: WorkDetailItem[] = [
+  //   { label: "開発技術", content: workDetail[0] },
+  //   { label: "その他", content: workDetail[1] },
+  //   { label: "制作時期", content: workDetail[2] },
+  //   { label: "制作期間", content: workDetail[3] },
+  //   { label: "開発担当", content: workDetail[4] },
+  //   { label: "URL", content: workDetail[5] },
+  //   { label: "GitHub", content: workDetail[6] },
+  // ];
+
+  // 上記のコードを以下のmap関数やfilter関数で表現している
+
+  const WorkDetailLabels = [
     "開発技術",
     "その他",
     "制作時期",
@@ -20,6 +32,21 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
     "URL",
     "GitHub",
   ];
+
+  const WorkDetailItems: WorkDetailItem[] = workDetail
+
+    // workDetailの中身(content)があったら { 詳細のラベル : 詳細のコンテント } というオブジェクトを作成するというmap
+    // workDetailの中身(content)がなかったら null(オブジェクトを作らない) を返す
+    // 三項演算子
+    // アイテムの削除などを行うわけではないので、indexを使用
+    .map((content, index) =>
+      content ? { label: WorkDetailLabels[index], content } : null
+    )
+
+    // item is WorkDetailItem というので型ガードを行っている
+    // mapされたworkDetailはnullというリストも含まれているため、null以外のリストを残すようにfilterをかけている
+    // null以外のリストがWorkDetailItemsになる
+    .filter((item): item is WorkDetailItem => item !== null);
 
   return (
     <Box
@@ -63,35 +90,30 @@ const WorksDetail: React.FC<WorksDetailProps> = ({
             ))}
           </Box>
           <Box
-            display={"flex"}
             px={{ xs: 3, md: 4.5 }}
             py={{ xs: 3, md: 4 }}
             bgcolor={"#EFEFEF"}
           >
-            <Box>
-              {workDetailLabels.map((item, index) => (
+            {WorkDetailItems.map((item, index) => (
+              <Box key={index} display={"flex"} mb={1}>
+                <Typography
+                  minWidth={83}
+                  letterSpacing={1.5}
+                  fontSize={{ xs: 12, md: 16 }}
+                  fontFamily={"sans-serif"}
+                >
+                  {item.label}
+                </Typography>
+                :　
                 <Typography
                   letterSpacing={1.5}
                   fontSize={{ xs: 12, md: 16 }}
                   fontFamily={"sans-serif"}
                 >
-                  {item}
+                  {item.content}
                 </Typography>
-              ))}
-            </Box>
-            <Box>
-              {workDetail.map((item, index) => (
-                <Box key={index} display={"flex"} mb={1}>
-                  <Typography
-                    letterSpacing={1.5}
-                    fontSize={{ xs: 12, md: 16 }}
-                    fontFamily={"sans-serif"}
-                  >
-                    ： {item}
-                  </Typography>
-                </Box>
-              ))}
-            </Box>
+              </Box>
+            ))}
           </Box>
         </Box>
         <Box width={{ xs: "85%", md: "55%" }}>
