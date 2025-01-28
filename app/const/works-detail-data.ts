@@ -33,7 +33,7 @@ export const CanBookDetailData: WorksDetailProps = {
     "Next.js, TypeScript, Go",
     "MUI, Vercel, PostgreSQL, docker",
     "2024年3月",
-    "1ヶ月",
+    "2週間",
     "企画, デザイン, 開発(フロント)",
     "https://canbook.vercel.app ",
     "https://github.com/shiori-42/CanBook",
