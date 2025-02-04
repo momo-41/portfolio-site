@@ -8,7 +8,7 @@ export const aboutMeData: AboutMeType = {
     "卒業年度",
     "研究室",
     "課外活動",
-    "経験",
+    "経験年数",
     "趣味",
     "特技",
   ],
