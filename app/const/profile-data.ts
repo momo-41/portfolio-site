@@ -1,12 +1,12 @@
 import { ProfileDataType } from "../types/types";
 
 export const ProfileData: ProfileDataType[] = [
-  {
-    profileDate: "2016-2019",
-    profileTitle: "藤沢市立鵠沼中学校 入学",
-    profileDescription:
-      "学級委員・指揮者・文化祭実行委員長を経験\n人の前に出るのが好きだった\n部活動は卓球部",
-  },
+  // {
+  //   profileDate: "2016-2019",
+  //   profileTitle: "藤沢市立鵠沼中学校 入学",
+  //   profileDescription:
+  //     "学級委員・指揮者・文化祭実行委員長を経験\n人の前に出るのが好きだった\n部活動は卓球部",
+  // },
   {
     profileDate: "2019-2022",
     profileTitle: "私立日本大学藤沢高等学校 入学",
